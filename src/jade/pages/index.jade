@@ -1,0 +1,135 @@
+
+mixin project(time, url, label, tech)
+    tr
+        td.tab-width-3=time
+        td.tab-width-4
+            a(href=url title=label)=label
+        td= tech
+
+mixin experience(time, url, label, role)
+    tr
+        td.tab-width-3= time
+        td.tab-width-4
+            a(href=url title=label)= label
+        td= role
+        
+mixin experienceLong(time, url, label, url2, label2, role)
+    tr
+        td.tab-width-3= time
+        td.tab-width-4
+            a(href=url title=label)= label
+            | , 
+            a(href=url2 title=label2)= label2
+        td= role
+    
+mixin skill(one, two)
+    tr
+        td.tab-width-6= one
+        td.tab-width-6= two
+
+mixin technology(area, list)
+    tr
+        td.tab-width-3= area
+        td.tab-width-6= list
+
+mixin misc(one, two)
+    tr
+        td.tab-width-6= one
+        td.tab-width-6= two
+
+doctype html
+html(lang="en")
+    head
+        title Ben Follington
+        meta(charset="UTF-8")
+        meta(name=viewport content="width=device-width, initial-scale=1")
+        include ../styles.jade
+    body
+        section.main
+            header.bio
+                h1 Ben Follington
+                p Full-Stack Web Developer, Designer and Independent Game Developer
+                p I'm a 23-year-old guy living in Brisbane, Australia. I like making things that make other people happy.
+                p <a href="https://twitter.com/vivavolt" title="Twitter">@vivavolt</a> <a href="https://github.com/bfollington" title="Github">github.com/bfollington</a> <a href="http://twopm.studio" title="TwoPM Games">twopm.studio</a> <a href="http://vsco.co/bfoll/" alt="VSCO Photography">photo journal</a> <a href="http://vivavolt.tumblr.com" alt="Tumblr Photography">photo showcase</a>
+
+            section
+                h2 &gt; Education
+                table
+                    tr
+                        td.tab-width-3 2002 - 2010
+                        td.tab-width-4
+                            a(href="http://www.bbc.qld.edu.au/" title="Brisbane Boys' College") Brisbane Boys' College
+                        td HCE, OP 1
+
+                    tr
+                        td.tab-width-3 2011 - 2015
+                        td.tab-width-4
+                            a(href="https://www.uq.edu.au/" title="University of Queensland") University of Queensland
+                        td BEng (Software), 1st Class Honours, 6.75 Weighted GPA
+
+            section
+                h2 &gt; Experience
+                table
+                    +experience("2016 - Present", "http://twopm.studio", "TwoPM Studios", "Technical Founder")
+                    
+                    +experience("2015 - Present", "http://www.conceptsafety.com.au/", "Concept Safety Systems", "Full-Stack Web Developer, Research & Development Officer")
+                    
+                    +experience("2007 - 2016", "http://voltic.com.au", "Voltic Games", "Technical Founder")
+                    
+                    +experienceLong("2013 - 2014", "http://www.crowdsites.com/", "Crowdsites", "http://workingmouse.com.au/", "Workingmouse", "Full-Stack Web Developer")
+
+                    +experience("2010 - 2011", "http://cetresources.com/", "CET Resources", "Web Design & Development In House")
+
+            section
+                h2 &gt; Projects
+                table
+                
+                    +project("2013 - Present", "http://twopm.studio/the-thin-silence", "The Thin Silence", "AS3, Adobe AIR, Flashpunk")
+                    
+                    +project("2015", "https://twopm.itch.io/its-hard-to-be-a-cube", "It's Hard To Be A Cube", "AS3, Adobe AIR, Flashpunk")
+                    
+                    +project("2014 - 2015", "#", "doublejump.io", "Ruby, Padrino, MongoDB, Digital Ocean")
+                    
+                    +project("2014", "#", "pck.io", "SmartOS, nginx, Ruby, MongoDB, Redis")
+                    
+                    +project("2013", "https://www.google.com.au/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjq5-qa2JfNAhVBE5QKHeQgCCUQFggdMAA&url=https%3A%2F%2Fitunes.apple.com%2Fau%2Fapp%2Funchain-my-heart%2Fid578858339%3Fmt%3D8&usg=AFQjCNGlOMB_QlLpsTcMg8W4jdP_TpoMPw&sig2=YOGEQbPze-hFAE5-7grpDA", "Unchain My Heart", "iOS")
+                    
+                    +project("2013", "https://www.google.com.au/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&cad=rja&uact=8&ved=0ahUKEwjujpPP2JfNAhXEI5QKHWzKDd0QFgglMAI&url=https%3A%2F%2Fitunes.apple.com%2Fus%2Fapp%2Fnightmerica-usn%2Fid596231696%3Fmt%3D8&usg=AFQjCNELxSJ1qWuJ4myKFi4CFNNZJxVvEw&sig2=Cwpi-PfIrtUPcUEv1OGaJA", "Nightmerica", "iOS")
+                    
+                    +project("2012", "https://www.google.com.au/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjotvTU2JfNAhVDFJQKHcqdAZoQFggdMAA&url=https%3A%2F%2Fitunes.apple.com%2Fau%2Fapp%2Frun-run-die!%2Fid515812356%3Fmt%3D8&usg=AFQjCNE5pms1Lf6M2L86G0hfrhGvPG_bFg&sig2=E7wktTIKIgKYniRrsGwT-w", "RunRunDie!", "iOS")
+                    
+                    +project("2008", "https://twopm.itch.io/evereternal-winterworld-2", "EverEternal WinterWorld 2", "PC")
+                    
+                    +project("2007", "https://twopm.itch.io/evereternal-winterworld", "EverEternal WinterWorld", "PC")
+
+            section
+                h2 &gt; Skills
+                table
+                    +skill("Interaction Design and Development", "Web Front-end Architecture")
+                    +skill("Graphic, UI & UX Design", "Pixel Art & Animation")
+                    +skill("REST API Design", "Back-end Architecture")
+                    +skill("Test Engineering", "Database Design")
+
+            section
+                h2 &gt; Technologies
+                table
+                
+                    +technology("C#", "ASP.NET, MVC4, EF6, Unity")
+                    +technology("Javascript", "React, JSX, ES6, Webpack, Node.js")
+                    +technology("HTML5 & CSS3", "Canvas, Jade, PostCSS, Sass, Bootstrap")
+                    +technology("Actionscript 3", "Flashpunk, AIR")
+                    +technology("Ruby", "Sinatra, Padrino, Mongoid, Capybara")
+                    +technology("Java", "JET, Standard Lib")
+                    +technology("Python", "numpy")
+                    +technology("PHP", "CakePHP :( ")
+
+            section
+                h2 &gt; Misc.
+                table
+                    +misc("Adobe Photoshop, Illustrator, Flash", "Sketch")
+                    +misc("Version Control (Git)", "Agile Development (JIRA, Trello)")
+                    +misc("Database Management (MySQL, MongoDB)", "")
+
+            p.blink _
+        
+    include ../ga.html

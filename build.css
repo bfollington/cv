@@ -1,0 +1,70 @@
+body {
+  /* Font stack borrowed from Jetbrains */
+  font-family: Menlo, Consolas, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, serif;
+  font-size: 12px;
+  background: #000; }
+
+h1, h2, h3, h4, h5, p, span, div, table, a {
+  color: #ccc;
+  font-size: 1em;
+  line-height: 1.2em; }
+
+h1, h2, h3, h4, h5, p {
+  margin-bottom: 1em; }
+
+h1, h2, h3, h4, h5 {
+  margin-top: 2em; }
+
+.main {
+  width: 800px;
+  margin: 0 auto; }
+
+a {
+  text-decoration: underline; }
+
+a:visited {
+  color: #ccc; }
+
+a:hover, a:active, a:focus {
+  color: black;
+  background: #ccc;
+  text-decoration: none; }
+
+.tab-width-1 {
+  width: 4em; }
+
+.tab-width-2 {
+  width: 8em; }
+
+.tab-width-3 {
+  width: 12em; }
+
+.tab-width-4 {
+  width: 16em; }
+
+.tab-width-5 {
+  width: 20em; }
+
+.tab-width-6 {
+  width: 24em; }
+
+.tab-width-7 {
+  width: 28em; }
+
+@keyframes blink {
+  50% {
+    opacity: 0.0; } }
+
+@-webkit-keyframes blink {
+  50% {
+    opacity: 0.0; } }
+
+.blink {
+  animation: blink 1s step-start 0s infinite;
+  -webkit-animation: blink 1s step-start 0s infinite; }
+
+@media print {
+  body {
+    background: white; }
+  h1, h2, h3, h4, h5, p, span, div, table {
+    color: #333; } }

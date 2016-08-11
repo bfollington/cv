@@ -1,0 +1,34 @@
+{
+  "name": "twopm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "style": "node-sass ./src/scss/root.scss build_unprefixed.css && npm run autoprefix",
+    "autoprefix": "postcss --use autoprefixer build_unprefixed.css > build.css",
+    "style-watch": "node-sass -w ./src/scss/root.scss build.css",
+    "jade": "jade --pretty ./src/jade/pages/*.jade -o .",
+    "jade-watch": "jade --watch --pretty ./src/jade/pages/*.jade -o .",
+    "build": "npm run style && npm run jade",
+    "watch": "npm run style-watch & npm run jade-watch",
+    "images": "imageoptim --directory --quit img"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bfollington/twopm-web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bfollington/twopm-web/issues"
+  },
+  "homepage": "https://github.com/bfollington/twopm-web#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.3.1",
+    "imageoptim-cli": "^1.11.6",
+    "jade": "^1.11.0",
+    "node-sass": "^3.4.2",
+    "postcss-cli": "^2.5.0"
+  }
+}
