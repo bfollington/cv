@@ -40,6 +40,10 @@ a:hover, a:active, a:focus {
     text-decoration: none;
 }
 
+.center {
+    text-align: center;
+}
+
 .tab-width-1 {
     width: 4em;
 }
@@ -92,5 +96,30 @@ a:hover, a:active, a:focus {
 
     h1, h2, h3, h4, h5, p, span, div, table {
         color: #333;
+    }
+}
+
+ul.images {
+
+    li {
+        display: inline-block;
+        margin-bottom: 2em;
+
+        img {
+            width: 128px;
+
+            &.big {
+                margin-right: 92px;
+                width: 256px;
+            }
+
+            &.full {
+                width: 100%;
+            }
+        }
+
+        .caption {
+            display: block;
+        }
     }
 }

@@ -1,0 +1,24 @@
+doctype html
+html(lang="en")
+    head
+        title Ben Follington - pck.io
+        meta(charset="UTF-8")
+        meta(name=viewport content="width=device-width, initial-scale=1")
+        include ../styles.jade
+    body
+        section.main
+            header
+                h1 pck.io
+                p pck.io was (briefly) a web service for packing several URLs into one sharable link. When opened the <a href="#">pck.io/bz</a> links would list all URLs with screenshot previews.
+
+            section
+                h2 &gt; Images
+                ul.images
+                    li
+                        img.full(src="img/pck_1.png")
+                        a.caption(href="img/pck_1.png") pck_1.png
+                    li
+
+            p.blink _
+        
+    include ../ga.html
