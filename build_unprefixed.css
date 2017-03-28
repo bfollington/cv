@@ -30,6 +30,9 @@ a:hover, a:active, a:focus {
   background: #ccc;
   text-decoration: none; }
 
+.center {
+  text-align: center; }
+
 .tab-width-1 {
   width: 4em; }
 
@@ -68,3 +71,16 @@ a:hover, a:active, a:focus {
     background: white; }
   h1, h2, h3, h4, h5, p, span, div, table {
     color: #333; } }
+
+ul.images li {
+  display: inline-block;
+  margin-bottom: 2em; }
+  ul.images li img {
+    width: 128px; }
+    ul.images li img.big {
+      margin-right: 92px;
+      width: 256px; }
+    ul.images li img.full {
+      width: 100%; }
+  ul.images li .caption {
+    display: block; }
