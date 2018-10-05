@@ -43,7 +43,7 @@ html(lang="en")
         title Ben Follington
         meta(charset="UTF-8")
         meta(name=viewport content="width=device-width, initial-scale=1")
-        include ../styles.jade
+        include ../styles.pug
     body
         section.main
             header.bio
@@ -70,7 +70,9 @@ html(lang="en")
             section
                 h2 &gt; Experience
                 table
-                    +experience("2017 - Present", "http://www.conceptsafety.com.au/", "Concept Safety Systems", "Front-end Software Engineer & UX Design")
+                    +experience("2018 - Present", "https://connectdevelop.com/", "Connect Develop", "Senior Frontend Developer")
+                    
+                    +experience("2017 - 2018", "http://www.conceptsafety.com.au/", "Concept Safety Systems", "Front-end Software Engineer & UX Design")
 
                     +experience("2016 - Present", "http://twopm.studio", "TwoPM Studios", "Technical Founder")
                     
@@ -130,7 +132,7 @@ html(lang="en")
             section
                 h2 &gt; Misc.
                 table
-                    +misc("Adobe Photoshop, Illustrator, Flash", "Sketch, Figma, Marvel")
+                    +misc("Adobe Photoshop, Illustrator, Flash", "Sketch, Figma, Framer X, Marvel")
                     +misc("Version Control (Git)", "Agile Development (JIRA, Trello)")
                     +misc("Database Management (MySQL, MongoDB, PostgreSQL)", "")
 

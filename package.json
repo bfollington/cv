@@ -8,10 +8,10 @@
     "style": "node-sass ./src/scss/root.scss build_unprefixed.css && npm run autoprefix",
     "autoprefix": "postcss --use autoprefixer build_unprefixed.css > build.css",
     "style-watch": "node-sass -w ./src/scss/root.scss build.css",
-    "jade": "jade --pretty ./src/jade/pages/*.jade -o .",
-    "jade-watch": "jade --watch --pretty ./src/jade/pages/*.jade -o .",
-    "build": "npm run style && npm run jade",
-    "watch": "npm run style-watch & npm run jade-watch",
+    "pug": "pug --pretty ./src/pug/pages/*.pug -o .",
+    "pug-watch": "pug --watch --pretty ./src/pug/pages/*.pug -o .",
+    "build": "npm run style && npm run pug",
+    "watch": "npm run style-watch & npm run pug-watch",
     "images": "imageoptim --directory --quit img"
   },
   "repository": {
@@ -27,8 +27,9 @@
   "devDependencies": {
     "autoprefixer": "^6.3.1",
     "imageoptim-cli": "^1.11.6",
-    "jade": "^1.11.0",
-    "node-sass": "^3.4.2",
-    "postcss-cli": "^2.5.0"
+    "node-sass": "^4.9.3",
+    "postcss-cli": "^2.5.0",
+    "pug": "^2.0.3",
+    "pug-cli": "^1.0.0-alpha6"
   }
 }
