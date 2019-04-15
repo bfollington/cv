@@ -1,7 +1,7 @@
 body {
   /* Font stack borrowed from Jetbrains */
   font-family: Menlo, Consolas, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, serif;
-  font-size: 12px;
+  font-size: 16px;
   background: #000; }
 
 h1, h2, h3, h4, h5, p, span, div, table, a {
@@ -15,8 +15,11 @@ h1, h2, h3, h4, h5, p {
 h1, h2, h3, h4, h5 {
   margin-top: 2em; }
 
+h1.name {
+  margin-top: 0; }
+
 .main {
-  width: 800px;
+  max-width: 800px;
   margin: 0 auto; }
 
 a {
@@ -84,3 +87,125 @@ ul.images li {
       width: 100%; }
   ul.images li .caption {
     display: block; }
+
+.project {
+  margin-top: 1em;
+  margin-bottom: 2em; }
+  .project .project_date {
+    display: block;
+    font-style: italic; }
+  .project .project_label {
+    display: block; }
+  .project .project_tech {
+    display: inline-block;
+    width: 100%; }
+  @media (min-width: 800px) {
+    .project {
+      margin-bottom: 0; }
+      .project .project_date {
+        display: inline-block;
+        width: 12em; }
+      .project .project_label {
+        display: inline-block;
+        width: 16em; }
+      .project .project_tech {
+        width: 20em; } }
+
+.experience {
+  margin-top: 1em;
+  margin-bottom: 2em; }
+  .experience .experience_time {
+    display: block;
+    font-style: italic; }
+  .experience .experience_label {
+    display: block; }
+  .experience .experience_role {
+    display: inline-block;
+    width: 100%; }
+  @media (min-width: 800px) {
+    .experience {
+      margin-bottom: 0; }
+      .experience .experience_time {
+        display: inline-block;
+        width: 12em; }
+      .experience .experience_label {
+        display: inline-block;
+        width: 16em; }
+      .experience .experience_role {
+        width: 20em; } }
+
+.education {
+  margin-top: 1em;
+  margin-bottom: 2em; }
+  .education .education_date {
+    display: block;
+    font-style: italic; }
+  .education .education_label {
+    display: block; }
+  .education .education_score {
+    display: inline-block;
+    width: 100%; }
+  @media (min-width: 800px) {
+    .education {
+      margin-bottom: 0; }
+      .education .education_date {
+        display: inline-block;
+        width: 12em; }
+      .education .education_label {
+        display: inline-block;
+        width: 16em; }
+      .education .education_score {
+        width: 20em; } }
+
+.skill .skill_col1 {
+  display: block; }
+
+.skill .skill_col2 {
+  display: block; }
+
+@media (min-width: 800px) {
+  .skill {
+    margin-bottom: 0; }
+    .skill .skill_col1 {
+      display: inline-block;
+      width: 24em; }
+    .skill .skill_col2 {
+      display: inline-block;
+      width: 24em; } }
+
+.technology {
+  margin-top: 1em;
+  margin-bottom: 2em; }
+  .technology .technology_area {
+    display: block;
+    font-style: italic;
+    margin-bottom: 1em; }
+  .technology .technology_list {
+    display: block; }
+  @media (min-width: 800px) {
+    .technology {
+      margin-bottom: 0; }
+      .technology .technology_area {
+        display: inline-block;
+        font-style: normal;
+        width: 12em;
+        margin-bottom: 0; }
+      .technology .technology_list {
+        display: inline-block;
+        width: 32em; } }
+
+.misc .misc_col1 {
+  display: block; }
+
+.misc .misc_col2 {
+  display: block; }
+
+@media (min-width: 800px) {
+  .misc {
+    margin-bottom: 0; }
+    .misc .misc_col1 {
+      display: inline-block;
+      width: 24em; }
+    .misc .misc_col2 {
+      display: inline-block;
+      width: 24em; } }

@@ -1,41 +1,41 @@
 
 mixin project(time, url, label, tech)
-    tr
-        td.tab-width-3=time
-        td.tab-width-4
+    div.project
+        div.project_date=time
+        div.project_label
             a(href=url title=label)=label
-        td= tech
+        div.project_tech= tech
 
 mixin experience(time, url, label, role)
-    tr
-        td.tab-width-3= time
-        td.tab-width-4
+    div.experience
+        div.experience_time= time
+        div.experience_label
             a(href=url title=label)= label
-        td= role
+        div.experience_role= role
         
 mixin experienceLong(time, url, label, url2, label2, role)
-    tr
-        td.tab-width-3= time
-        td.tab-width-4
+    div.experience
+        div.experience_time= time
+        div.experience_label
             a(href=url title=label)= label
             | , 
             a(href=url2 title=label2)= label2
-        td= role
+        div.experience_role= role
     
 mixin skill(one, two)
-    tr
-        td.tab-width-6= one
-        td.tab-width-6= two
+    div.skill
+        div.skill_col1= one
+        div.skill_col2= two
 
 mixin technology(area, list)
-    tr
-        td.tab-width-3= area
-        td.tab-width-6= list
+    div.technology
+        div.technology_area= area
+        div.technology_list= list
 
 mixin misc(one, two)
-    tr
-        td.tab-width-6= one
-        td.tab-width-6= two
+    div.misc
+        div.misc_col1= one
+        div.misc_col2= two
 
 doctype html
 html(lang="en")
@@ -47,27 +47,27 @@ html(lang="en")
     body
         section.main
             header.bio
-                h1 Ben Follington
+                h1.name Ben Follington
                 p UI Engineer, Designer and Independent Game Developer
                 p I'm a 26-year-old guy living in Brisbane, Australia. I like making things that make other people happy.
                 p <a href="https://twitter.com/vivavolt" title="Twitter">@vivavolt</a> <a href="https://github.com/bfollington" title="Github">github.com/bfollington</a> <a href="http://twopm.studio" title="TwoPM Games">twopm.studio</a> <a href="http://instagram.com/bfoll69" alt="Instagram">instagram</a> <a href="https://www.flickr.com/photos/bfollington/" alt="Flickr">photo showcase</a> <a href="https://www.linkedin.com/in/bfollington" alt="LinkedIn">linked.in</a>
 
-            section
+            section.education-list
                 h2 &gt; Education
-                table
-                    tr
-                        td.tab-width-3 2002 - 2010
-                        td.tab-width-4
+                div
+                    div.education
+                        div.education_date 2002 - 2010
+                        div.education_label
                             a(href="http://www.bbc.qld.edu.au/" title="Brisbane Boys' College") Brisbane Boys' College
-                        td HCE, OP 1
+                        div.education_score HCE, OP 1
 
-                    tr
-                        td.tab-width-3 2011 - 2015
-                        td.tab-width-4
+                    div.education
+                        div.education_date 2011 - 2015
+                        div.education_label
                             a(href="https://www.uq.edu.au/" title="University of Queensland") University of Queensland
-                        td BEng (Software), 1st Class Honours, 6.75 Weighted GPA
+                        div.education_score BEng (Software), 1st Class Honours, 6.75 Weighted GPA
 
-            section
+            section.experience-list
                 h2 &gt; Experience
                 table
                     +experience("2018 - Present", "https://connectdevelop.com/", "Connect Develop", "Senior Frontend Developer")
@@ -84,7 +84,7 @@ html(lang="en")
 
                     +experience("2010 - 2011", "http://cetresources.com/", "CET Resources", "Web Design & Development In House")
 
-            section
+            section.project-list
                 h2 &gt; Projects
                 table
                     +project("2019 - Present", "https://bf.wtf", "Personal Blog", "Gastby, React, Now.sh")
@@ -109,7 +109,7 @@ html(lang="en")
                     
                     +project("2007", "https://twopm.itch.io/evereternal-winterworld", "EverEternal WinterWorld", "PC")
 
-            section
+            section.skill-list
                 h2 &gt; Skills
                 table
                     +skill("UI Engineering", "Web Front-end Architecture")
@@ -117,7 +117,7 @@ html(lang="en")
                     +skill("Branding & Identity", "Pixel Art & Animation")
                     +skill("REST API Design", "Back-end Architecture")
 
-            section
+            section.technology-list
                 h2 &gt; Technologies
                 table
                 
@@ -129,10 +129,9 @@ html(lang="en")
                     +technology("Actionscript 3", "Flashpunk, AIR")
                     +technology("Ruby", "Sinatra, Padrino, Rails, Mongoid, Capybara")
                     +technology("Java", "JET, Standard Lib, Spring")
-                    +technology("Python", "numpy")
-                    +technology("PHP", "CakePHP :( ")
+                    +technology("Python", "For scripts")
 
-            section
+            section.misc-list
                 h2 &gt; Misc.
                 table
                     +misc("Adobe Photoshop, Illustrator, Flash", "Sketch, Figma, Framer X, Marvel")

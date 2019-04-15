@@ -1,9 +1,11 @@
+$full-width: 800px;
+
 body {
     /* Font stack borrowed from Jetbrains */
     font-family: Menlo, Consolas, Monaco, 'Lucida Console',
     'Liberation Mono', 'DejaVu Sans Mono',
     'Bitstream Vera Sans Mono', 'Courier New', monospace, serif;
-    font-size: 12px;
+    font-size: 16px;
     background: #000;
 }
 
@@ -21,8 +23,12 @@ h1, h2, h3, h4, h5 {
     margin-top: 2em;
 }
 
+h1.name {
+    margin-top: 0;
+}
+
 .main {
-    width: 800px;
+    max-width: $full-width;
     margin: 0 auto;
 }
 
@@ -43,6 +49,15 @@ a:hover, a:active, a:focus {
 .center {
     text-align: center;
 }
+
+$tab-1: 4em;
+$tab-2: 8em;
+$tab-3: 12em;
+$tab-4: 16em;
+$tab-5: 20em;
+$tab-6: 24em;
+$tab-7: 28em;
+$tab-8: 32em;
 
 .tab-width-1 {
     width: 4em;
@@ -120,6 +135,202 @@ ul.images {
 
         .caption {
             display: block;
+        }
+    }
+}
+
+.project {
+
+    .project_date {
+        display: block;
+        font-style: italic;
+    }
+
+    .project_label {
+        display: block;
+    }
+
+    margin-top: 1em;
+    margin-bottom: 2em;
+
+    .project_tech {
+        display: inline-block;
+        width: 100%;
+    }
+
+    @media (min-width: $full-width) {
+        margin-bottom: 0;
+
+        .project_date {
+            display: inline-block;
+            width: $tab-3;
+        }
+    
+        .project_label {
+            display: inline-block;
+            width: $tab-4;
+        }
+
+        .project_tech {
+            width: $tab-5;
+        }
+    }
+}
+
+.experience {
+
+    .experience_time {
+        display: block;
+        font-style: italic;
+    }
+
+    .experience_label {
+        display: block;
+    }
+
+    margin-top: 1em;
+    margin-bottom: 2em;
+
+    .experience_role {
+        display: inline-block;
+        width: 100%;
+    }
+
+    @media (min-width: $full-width) {
+        margin-bottom: 0;
+
+        .experience_time {
+            display: inline-block;
+            width: $tab-3;
+        }
+    
+        .experience_label {
+            display: inline-block;
+            width: $tab-4;
+        }
+
+        .experience_role {
+            width: $tab-5;
+        }
+    }
+}
+
+.education {
+
+    .education_date {
+        display: block;
+        font-style: italic;
+    }
+
+    .education_label {
+        display: block;
+    }
+
+    margin-top: 1em;
+    margin-bottom: 2em;
+
+    .education_score {
+        display: inline-block;
+        width: 100%;
+    }
+
+    @media (min-width: $full-width) {
+        margin-bottom: 0;
+
+        .education_date {
+            display: inline-block;
+            width: $tab-3;
+        }
+    
+        .education_label {
+            display: inline-block;
+            width: $tab-4;
+        }
+
+        .education_score {
+            width: $tab-5;
+        }
+    }
+}
+
+.skill {
+
+    .skill_col1 {
+        display: block;
+    }
+
+    .skill_col2 {
+        display: block;
+    }
+
+    @media (min-width: $full-width) {
+        margin-bottom: 0;
+
+        .skill_col1 {
+            display: inline-block;
+            width: $tab-6;
+        }
+    
+        .skill_col2 {
+            display: inline-block;
+            width: $tab-6;
+        }
+    }
+}
+
+.technology {
+
+    .technology_area {
+        display: block;
+        font-style: italic;
+        margin-bottom: 1em;
+    }
+
+    .technology_list {
+        display: block;
+    }
+
+    margin-top: 1em;
+    margin-bottom: 2em;
+
+    @media (min-width: $full-width) {
+        margin-bottom: 0;
+
+        .technology_area {
+            display: inline-block;
+            font-style: normal;
+            width: $tab-3;
+            margin-bottom: 0;
+        }
+    
+        .technology_list {
+            display: inline-block;
+            width: $tab-8;
+        }
+    }
+}
+
+.misc {
+
+    .misc_col1 {
+        display: block;
+    }
+
+    .misc_col2 {
+        display: block;
+    }
+
+    @media (min-width: $full-width) {
+        margin-bottom: 0;
+
+        .misc_col1 {
+            display: inline-block;
+            width: $tab-6;
+        }
+    
+        .misc_col2 {
+            display: inline-block;
+            width: $tab-6;
         }
     }
 }
