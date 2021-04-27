@@ -49,7 +49,7 @@ html(lang="en")
             header.bio
                 h1.name Ben Follington
                 p UI Engineer, Designer and Independent Game Developer
-                p I'm a 27-year-old living in Brisbane, Australia. I like making simple, elegant, useful and fun things using computers.
+                p I'm a 28-year-old living in Brisbane, Australia. I like making simple, useful and fun things using computers.
                 p <a href="https://twitter.com/vivavolt" title="tweets">@vivavolt</a> <a href="https://github.com/bfollington" title="open source">github.com/bfollington</a> <a href="http://twopm.studio" title="video games I've made">twopm.studio</a> <a href="https://photos.bf.wtf" title="photos from around the world">photos</a> <a href="https://www.linkedin.com/in/bfollington" title="that one job site everyone loves">linkedin</a>
 
             section.education-list
@@ -87,11 +87,15 @@ html(lang="en")
             section.project-list
                 h2 &gt; Projects
                 table
+                    +project("2020 - Present", "https://slashcommand.app", "slashcommand", "Clojure, Unity3d, Heroku")
+
                     +project("2019 - Present", "https://twopm.studio/sotf", "The Song of The Fae", "C#, F#, Unity3d")
 
                     +project("2019 - Present", "https://bf.wtf", "Personal Blog", "Gastby, React, Now.sh")
 
                     +project("2018 - Present", "https://soundtracktomy.life", "Soundtrack to My Life", "Ruby, Rails, Heroku, Spotify API")
+                    
+                    +project("2021 - 2021", "https://twopm.itch.io/frogue", "FROGUE (7DRL)", "ClojureScript, Pixi.js")
 
                     +project("2013 - 2018", "https://twopm.studio/the-thin-silence", "The Thin Silence", "AS3, Adobe AIR, Flashpunk")
                     
@@ -116,17 +120,18 @@ html(lang="en")
                 table
                     +skill("UI Engineering", "Web Front-end Architecture")
                     +skill("UI & UX Design", "Interaction Design and Development")
-                    +skill("Branding & Identity", "Pixel Art & Animation")
-                    +skill("API Design", "Back-end Architecture")
+                    +skill("Systems Architecture", "Pixel Art & Animation")
+                    +skill("API Design", "Functional Programming")
 
             section.technology-list
                 h2 &gt; Technologies
                 table
                 
-                    +technology("Web", "Typescript, fp-ts, React, Redux, emotion, Vue, Webpack, Node.js, PWAs")
-                    +technology("Functional Programming", "F#, Clojure, Elm, Haskell, Event Sourcing, CQRS")
+                    +technology("Javascript", "Typescript, fp-ts, React (hooks), Redux, Zustand, emotion, Webpack, Node, PWAs")
+                    +technology("Clojure", "Clojure, ClojureScript, malli, reitit, aleph, manifold, datalog")
+                    +technology("Functional Programming", "Clojure, F#, Elm, Haskell, ReasonML, Event Sourcing, CQRS")
                     +technology(".NET", "C#, F#, ASP.NET core, EF core, Unity3d")
-                    +technology("HTML & CSS", "Pug, PostCSS, SCSS, Canvas, Bulma, Bootstrap, Foundation, Material UI")
+                    +technology("HTML & CSS", "Pug, PostCSS, SCSS, Canvas, Chakra UI")
                     +technology("Ruby", "Sinatra, Padrino, Rails, Mongoid, Capybara")
                     +technology("Actionscript 3", "Flashpunk, AIR")
                     +technology("_", "Java, Python, C, AS3, Lua, Swift, Kotlin")
@@ -134,10 +139,10 @@ html(lang="en")
             section.misc-list
                 h2 &gt; Misc.
                 table
-                    +misc("Adobe Photoshop, Illustrator, Flash", "Sketch, Figma, Framer X, Marvel")
-                    +misc("AWS, Heroku, Netlify", "Now.sh, Azure, Github Pages")
+                    +misc("AWS, Heroku, Netlify", "Vercel, Azure, Github Pages")
+                    +misc("Adobe Photoshop, Illustrator, Flash", "Figma, Sketch, Invision, Framer X")
                     +misc("Version Control (Git)", "\"Agile\" (ft. Jira, Trello, Notion)")
-                    +misc("Databases (MySQL, MongoDB, PostgreSQL)", "vim...mode in VS Code ;)")
+                    +misc("Databases (MySQL, MongoDB, PostgreSQL)", "vim... and a little emacs")
 
             p.blink _
         
