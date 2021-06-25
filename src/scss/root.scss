@@ -2,7 +2,7 @@ $full-width: 800px;
 
 body {
     /* Font stack borrowed from Jetbrains */
-    font-family: Menlo, Consolas, Monaco, 'Lucida Console',
+    font-family: "IBM Plex Mono", Menlo, Consolas, Monaco, 'Lucida Console',
     'Liberation Mono', 'DejaVu Sans Mono',
     'Bitstream Vera Sans Mono', 'Courier New', monospace, serif;
     font-size: 16px;
@@ -10,7 +10,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, p, span, div, table, a {
-    color: #ccc;
+    color: #eee;
     font-size: 1em;
     line-height: 1.2em;
 }
@@ -265,6 +265,7 @@ ul.images {
 
     @media (min-width: $full-width) {
         margin-bottom: 0;
+    margin-bottom: 1em;
 
         .skill_col1 {
             display: inline-block;
@@ -276,6 +277,7 @@ ul.images {
             width: $tab-6;
         }
     }
+
 }
 
 .technology {
@@ -321,7 +323,7 @@ ul.images {
     }
 
     @media (min-width: $full-width) {
-        margin-bottom: 0;
+        margin-bottom: 1em;
 
         .misc_col1 {
             display: inline-block;

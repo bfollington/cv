@@ -48,9 +48,12 @@ html(lang="en")
         section.main
             header.bio
                 h1.name Ben Follington
-                p UI Engineer, Designer and Independent Game Developer
-                p I'm a 28-year-old living in Brisbane, Australia. I like making simple, useful and fun things using computers.
-                p <a href="https://twitter.com/vivavolt" title="tweets">@vivavolt</a> <a href="https://github.com/bfollington" title="open source">github.com/bfollington</a> <a href="http://twopm.studio" title="video games I've made">twopm.studio</a> <a href="https://photos.bf.wtf" title="photos from around the world">photos</a> <a href="https://www.linkedin.com/in/bfollington" title="that one job site everyone loves">linkedin</a>
+                
+                p I'm a UI Engineer, designer and independent game developer living in Brisbane, Australia.
+                p I make powerful, intuitive and joyful software using the tools I love.
+                p You'll find me working at the intersection of art, technology, psychology, philosophy and human connection.
+
+                p <a href="https://bf.wtf" title="home">homepage</a> <a href="https://twitter.com/vivavolt" title="tweets">twitter</a> <a href="https://github.com/bfollington" title="open source">github</a> <a href="http://twopm.studio" title="video games I've made">twopm.studio</a> <a href="https://www.linkedin.com/in/bfollington" title="that one job site everyone loves">linkedin</a>
 
             section.education-list
                 h2 &gt; Education
@@ -71,10 +74,10 @@ html(lang="en")
                 h2 &gt; Experience
                 table
                     +experience("2018 - Present", "https://connectdevelop.com/", "Connect Develop", "Technical Lead")
-                    
-                    +experience("2017 - 2018", "http://www.conceptsafety.com.au/", "Concept Safety Systems", "Front-end Software Engineer & UX Design")
 
                     +experience("2016 - Present", "http://twopm.studio", "TwoPM Studios", "Technical Founder")
+                    
+                    +experience("2017 - 2018", "http://www.conceptsafety.com.au/", "Concept Safety Systems", "Front-end Software Engineer & UX Design")
                     
                     +experience("2015 - 2017", "http://www.conceptsafety.com.au/", "Concept Safety Systems", "Full-Stack Web Developer, Research & Development Officer")
                     
@@ -84,18 +87,22 @@ html(lang="en")
 
                     +experience("2010 - 2011", "http://cetresources.com/", "CET Resources", "Web Design & Development In House")
 
+                    +experience("2008 - 2010", "#", "Freelance", "Web Design & Development (for family and friends)")
+
             section.project-list
                 h2 &gt; Projects
                 table
+                    +project("2021 - Present", "https://www.hicetnunc.xyz/tz/tz1XHjbFVsAqp1J2gS9wbMXXMTv1cbh4F915", "Generative Art (NFTs)", "React, three.js, webgl, glsl, Ethereum, Tezos")
+
                     +project("2020 - Present", "https://slashcommand.app", "slashcommand", "Clojure, Unity3d, Heroku")
 
                     +project("2019 - Present", "https://twopm.studio/sotf", "The Song of The Fae", "C#, F#, Unity3d")
 
-                    +project("2019 - Present", "https://bf.wtf", "Personal Blog", "Gastby, React, Now.sh")
+                    +project("2021", "https://twopm.itch.io/frogue", "FROGUE (7DRL)", "ClojureScript, Pixi.js")
 
-                    +project("2018 - Present", "https://soundtracktomy.life", "Soundtrack to My Life", "Ruby, Rails, Heroku, Spotify API")
-                    
-                    +project("2021 - 2021", "https://twopm.itch.io/frogue", "FROGUE (7DRL)", "ClojureScript, Pixi.js")
+                    +project("2019 - 2020", "https://bf.wtf", "Personal Blog", "Gastby, React, Now.sh")
+
+                    +project("2018 - 2020", "https://soundtracktomy.life", "Soundtrack to My Life", "Ruby, Rails, Heroku, Spotify API")
 
                     +project("2013 - 2018", "https://twopm.studio/the-thin-silence", "The Thin Silence", "AS3, Adobe AIR, Flashpunk")
                     
@@ -115,6 +122,20 @@ html(lang="en")
                     
                     +project("2007", "https://twopm.itch.io/evereternal-winterworld", "EverEternal WinterWorld", "PC, MMF2")
 
+            section.technology-list
+                h2 &gt; Technologies
+                table
+                
+                    +technology("Javascript", "Typescript, fp-ts, React, Redux, Zustand, emotion, Webpack, Node, Cypress, PWAs, canvas, svg, webgl")
+                    +technology("Clojure", "Clojure, ClojureScript, re-frame, reagent, malli, reitit, aleph, manifold, datalog")
+                    +technology("Functional Programming", "Clojure, F#, Elm, Haskell, ReasonML, Event Sourcing, CQRS")
+                    +technology(".NET", "C#, F#, ASP.NET core, EF core, Unity3d")
+                    +technology("HTML & CSS", "Pug, PostCSS, SCSS, Canvas, Chakra UI")
+                    +technology("Ruby", "Sinatra, Padrino, Rails, Mongoid, Capybara")
+                    +technology("Actionscript 3", "Flashpunk, AIR")
+                    +technology("Misc.", "Java, Python, C, AS3, Lua, Swift, Kotlin")
+                    +technology("Curious About", "Rust, Go, Racket, Unison")
+
             section.skill-list
                 h2 &gt; Skills
                 table
@@ -123,27 +144,16 @@ html(lang="en")
                     +skill("Systems Architecture", "Pixel Art & Animation")
                     +skill("API Design", "Functional Programming")
 
-            section.technology-list
-                h2 &gt; Technologies
-                table
-                
-                    +technology("Javascript", "Typescript, fp-ts, React (hooks), Redux, Zustand, emotion, Webpack, Node, PWAs")
-                    +technology("Clojure", "Clojure, ClojureScript, malli, reitit, aleph, manifold, datalog")
-                    +technology("Functional Programming", "Clojure, F#, Elm, Haskell, ReasonML, Event Sourcing, CQRS")
-                    +technology(".NET", "C#, F#, ASP.NET core, EF core, Unity3d")
-                    +technology("HTML & CSS", "Pug, PostCSS, SCSS, Canvas, Chakra UI")
-                    +technology("Ruby", "Sinatra, Padrino, Rails, Mongoid, Capybara")
-                    +technology("Actionscript 3", "Flashpunk, AIR")
-                    +technology("_", "Java, Python, C, AS3, Lua, Swift, Kotlin")
 
             section.misc-list
-                h2 &gt; Misc.
+                h2 &gt; Tools
                 table
                     +misc("AWS, Heroku, Netlify", "Vercel, Azure, Github Pages")
-                    +misc("Adobe Photoshop, Illustrator, Flash", "Figma, Sketch, Invision, Framer X")
-                    +misc("Version Control (Git)", "\"Agile\" (ft. Jira, Trello, Notion)")
-                    +misc("Databases (MySQL, MongoDB, PostgreSQL)", "vim... and a little emacs")
+                    +misc("Photoshop, Illustrator, Figma", "Miro, Sketch, Invision, Framer X")
+                    +misc("Version Control (Git)", "Github, Linear, Jira, Trello, Notion")
+                    +misc("MySQL, PostgreSQL, NoSQL, Datomic", "vim... and a little emacs")
 
-            p.blink _
+            p :wq!
+                span.blink _
         
     include ../ga.html

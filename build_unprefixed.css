@@ -1,11 +1,11 @@
 body {
   /* Font stack borrowed from Jetbrains */
-  font-family: Menlo, Consolas, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, serif;
+  font-family: "IBM Plex Mono", Menlo, Consolas, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, serif;
   font-size: 16px;
   background: #000; }
 
 h1, h2, h3, h4, h5, p, span, div, table, a {
-  color: #ccc;
+  color: #eee;
   font-size: 1em;
   line-height: 1.2em; }
 
@@ -165,7 +165,8 @@ ul.images li {
 
 @media (min-width: 800px) {
   .skill {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    margin-bottom: 1em; }
     .skill .skill_col1 {
       display: inline-block;
       width: 24em; }
@@ -202,7 +203,7 @@ ul.images li {
 
 @media (min-width: 800px) {
   .misc {
-    margin-bottom: 0; }
+    margin-bottom: 1em; }
     .misc .misc_col1 {
       display: inline-block;
       width: 24em; }
