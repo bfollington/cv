@@ -12,16 +12,16 @@ mixin experience(time, url, label, role)
         div.experience_label
             a(href=url title=label)= label
         div.experience_role= role
-        
+
 mixin experienceLong(time, url, label, url2, label2, role)
     div.experience
         div.experience_time= time
         div.experience_label
             a(href=url title=label)= label
-            | , 
+            | ,
             a(href=url2 title=label2)= label2
         div.experience_role= role
-    
+
 mixin skill(one, two)
     div.skill
         div.skill_col1= one
@@ -48,10 +48,9 @@ html(lang="en")
         section.main
             header.bio
                 h1.name Ben Follington
-                
-                p I'm a UI Engineer, designer and independent game developer living in Brisbane, Australia.
-                p I make powerful, intuitive and joyful software using the tools I love.
-                p You'll find me working at the intersection of art, technology, psychology, philosophy and human connection.
+
+                p I am an designer, engineer and artist exploring human-computer interaction. I specialize in turning the imaginary into the real using generative techniques, experience design and graphics/interaction programming.
+                p based in Brisbane, Australia.
 
                 p <a href="https://bf.wtf" title="home">homepage</a> <a href="https://twitter.com/vivavolt" title="tweets">twitter</a> <a href="https://github.com/bfollington" title="open source">github</a> <a href="http://twopm.studio" title="video games I've made">twopm.studio</a> <a href="https://www.linkedin.com/in/bfollington" title="that one job site everyone loves">linkedin</a>
 
@@ -76,13 +75,13 @@ html(lang="en")
                     +experience("2018 - Present", "https://connectdevelop.com/", "Connect Develop", "Technical Lead")
 
                     +experience("2016 - Present", "http://twopm.studio", "TwoPM Studios", "Technical Founder")
-                    
+
                     +experience("2017 - 2018", "http://www.conceptsafety.com.au/", "Concept Safety Systems", "Front-end Software Engineer & UX Design")
-                    
+
                     +experience("2015 - 2017", "http://www.conceptsafety.com.au/", "Concept Safety Systems", "Full-Stack Web Developer, Research & Development Officer")
-                    
+
                     +experience("2007 - 2016", "http://voltic.com.au", "Voltic Games", "Technical Founder")
-                    
+
                     +experienceLong("2013 - 2014", "http://www.crowdsites.com/", "Crowdsites", "http://workingmouse.com.au/", "Workingmouse", "Full-Stack Web Developer")
 
                     +experience("2010 - 2011", "http://cetresources.com/", "CET Resources", "Web Design & Development In House")
@@ -92,7 +91,7 @@ html(lang="en")
             section.technology-list
                 h2 &gt; Technologies
                 table
-                
+
                     +technology("Javascript", "Typescript, fp-ts, React, Next.js, node, Redux, Zustand, rxjs, snowpack, parcel, webpack")
                     +technology("Frontend", "stitches, emotion, Chakra UI, PostCSS, SCSS, cypress, PWAs, three.js, canvas, svg, webgl")
                     +technology("Clojure", "Clojure, ClojureScript, re-frame, reagent, malli, reitit, aleph, manifold, datalog")
@@ -127,26 +126,26 @@ html(lang="en")
                     +project("2018 - 2020", "https://soundtracktomy.life", "Soundtrack to My Life", "Ruby, Rails, Heroku, Spotify API")
 
                     +project("2013 - 2018", "https://twopm.studio/the-thin-silence", "The Thin Silence", "AS3, Adobe AIR, Flashpunk")
-                    
+
                     +project("2015", "https://twopm.itch.io/its-hard-to-be-a-cube", "It's Hard To Be A Cube", "AS3, Adobe AIR, Flashpunk")
-                    
+
                     +project("2014 - 2015", "doublejump.html", "doublejump.io", "Ruby, Padrino, MongoDB, Digital Ocean")
-                    
+
                     +project("2014", "https://github.com/bfollington/Trello-Cards-Unity", "Trello-Cards-Unity", "Trello API, C#, Unity3d")
 
                     +project("2014", "pck.html", "pck.io", "SmartOS, nginx, Ruby, MongoDB, Redis")
-                    
+
                     +project("2013", "umh.html", "Unchain My Heart", "iOS, MMF2")
-                    
+
                     +project("2013", "usn.html", "Nightmerica", "iOS, MMF2")
-                    
+
                     +project("2012", "runrundie.html", "RunRunDie!", "iOS, MMF2")
-                    
+
                     +project("2008", "https://twopm.itch.io/evereternal-winterworld-2", "EverEternal WinterWorld 2", "PC, MMF2")
-                    
+
                     +project("2007", "https://twopm.itch.io/evereternal-winterworld", "EverEternal WinterWorld", "PC, MMF2")
 
-         
+
 
             section.skill-list
                 h2 &gt; Skills
@@ -167,5 +166,5 @@ html(lang="en")
 
             p :wq!
                 span.blink _
-        
-   <script async defer data-website-id="ee37f19f-e38f-4bcd-95f3-0f6d69ff4eb6" src="https://google-analytics-sucks.vercel.app/umami.js"></script>
+
+    <script async defer data-website-id="ee37f19f-e38f-4bcd-95f3-0f6d69ff4eb6" src="https://google-analytics-sucks.vercel.app/umami.js"></script>
